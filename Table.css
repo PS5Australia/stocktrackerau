@@ -1,0 +1,130 @@
+table {
+  border-collapse: separate;
+  text-align: center;
+  border-spacing: 20px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.twitterps5,
+.twitterxsx,
+.twitterrat,
+.discord {
+  border: none;
+  background: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th {
+  text-align: center;
+}
+
+/*Remove*/
+td {
+  text-align: center;
+  border: 1px solid rgb(255, 0, 0);
+  padding: 5px;
+}
+
+.sitestatus {
+  text-align: center;
+  border: 1px solid rgb(0, 165, 0);
+  padding: 5px;
+}
+
+.ps5status {
+  text-align: center;
+  border: 1px solid rgb(0, 165, 0);
+  padding: 5px;
+}
+
+.xsxstatus {
+  text-align: center;
+  border: 1px solid rgb(255, 0, 0);
+  padding: 5px;
+}
+
+.ratstatus {
+  text-align: center;
+  border: 1px solid rgb(0, 165, 0);
+  padding: 5px;
+}
+
+/*PS5.HTML*/
+.amazondisc {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.amazondigital {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.targetdiscbundle {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.sonydigitalbundle {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.bigwdisc {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.bigwdigital {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.sonydiscbundle {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.targetdisc {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.targetdigital {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.sonydigital {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.sonydisc {
+  border: 1px solid rgb(255, 0, 0);
+}
+.table {
+  padding: 50px 40px;
+  text-align: left;
+  font-family: arial;
+  font-size: 25px;
+}
+
+.table th {
+  font-family: arial;
+}
+
+.table td {
+  font-family: arial;
+}
+
+.table a {
+  font-family: arial;
+  color: #000000;
+  text-decoration: none;
+}
+
+.table h1 {
+  font-size: 50px;
+  padding: 1px 15px;
+}
