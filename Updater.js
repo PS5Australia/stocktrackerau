@@ -22,7 +22,7 @@ async function OnLaunch() {
         if (obj["AmazonDisc"] == "Out of Stock") {
             document.getElementById("amazondisc").innerHTML="Amazon | Out of Stock";
         }
-        else if (obj["AmazonDisc"] == "In Stock!") {
+        else if (obj["AmazonDisc"] == "In Stock") {
             document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
         }
         await sleep(15000);
