@@ -1,13 +1,13 @@
 {
-    "AmazonDisc": "Out Of Stock",
-    "AmazonDigital": "Out Of Stock",
-    "BigWDisc": "Out Of Stock",
-    "BigWDigital": "Out Of Stock",
-    "TargetDisc": "Out Of Stock",
-    "TargetDigital": "Out Of Stock",
-    "TargetBundle": "Out Of Stock",
-    "SonyDisc": "Out Of Stock",
-    "SonyDigital": "Out Of Stock",
-    "SonyDiscBundle": "Out Of Stock",
-    "SonyDigitalBundle": "Out Of Stock"
+    "AmazonDisc": "In Stock",
+    "AmazonDigital": "Out of Stock",
+    "BigWDisc": "Out of Stock",
+    "BigWDigital": "Out of Stock",
+    "TargetDisc": "Out of Stock",
+    "TargetDigital": "Out of Stock",
+    "TargetBundle": "Out of Stock",
+    "SonyDisc": "Out of Stock",
+    "SonyDigital": "Out of Stock",
+    "SonyDiscBundle": "Out of Stock",
+    "SonyDigitalBundle": "Out of Stock"
 }
