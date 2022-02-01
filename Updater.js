@@ -13,19 +13,17 @@ async function OnLaunch() {
             }
           }
         )
-
-        if (response.ok) {
-            var data = await response.text()
-        }
-        console.log(data);
-        var obj = JSON.parse(data);
-        if (obj["AmazonDisc"] == "Out of Stock") {
-            document.getElementById("amazondisc").innerHTML="Amazon | Out of Stock";
-        }
-        else if (obj["AmazonDisc"] == "In Stock") {
-            document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
-        }
+        .then(response => response.text())
+        .then(data => {
+            var obj = JSON.parse(data);
+            if (obj["AmazonDisc"] == "Out of Stock") {
+                document.getElementById("amazondisc").innerHTML="Amazon | Out of Stock";
+            }
+            else if (obj["AmazonDisc"] == "In Stock") {
+                document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
+            }
+            console.log(data)
+        });
         await sleep(15000);
-
     }
 }
