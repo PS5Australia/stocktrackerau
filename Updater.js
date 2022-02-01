@@ -5,7 +5,7 @@ function sleep(ms) {
 async function OnLaunch() {
     var i = 1
     while (i < 10) {
-        const url = 'https://www.stocktrackerau.com/stock.json'
+        const url = 'https://raw.githubusercontent.com/PS5Australia/stocktrackerau/main/stock.json'
         var response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -23,6 +23,6 @@ async function OnLaunch() {
                 document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
             }
         });
-        await sleep(15000);
+        await sleep(300000);
     }
 }

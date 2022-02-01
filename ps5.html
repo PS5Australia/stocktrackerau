@@ -6,6 +6,23 @@
         <link rel="stylesheet" href="Table.css" />
         <script src="SiteScript.js"></script>
         <script src="Updater.js"></script>
+        <script type="module">
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+          const firebaseConfig = {
+            apiKey: "AIzaSyDR47C0_Wsu_eS1s5avZcgeAEi9egbfEYs",
+            authDomain: "stocktracker-7bcdd.firebaseapp.com",
+            databaseURL: "https://stocktracker-7bcdd-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "stocktracker-7bcdd",
+            storageBucket: "stocktracker-7bcdd.appspot.com",
+            messagingSenderId: "222567674688",
+            appId: "1:222567674688:web:24935c486a69c9a5e280a5",
+            measurementId: "G-Q09TKLLNS5"
+          };
+          const app = initializeApp(firebaseConfig);
+          const db = firebase.firestore();
+          var status = db.collection('status');
+        </script>
         <link rel="icon" href="favicon.ico">
         <title>Stock Tracker AU</title>
         <div class="topnav">
