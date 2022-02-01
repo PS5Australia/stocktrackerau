@@ -22,7 +22,6 @@ async function OnLaunch() {
             else if (obj["AmazonDisc"] == "In Stock") {
                 document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
             }
-            console.log(data)
         });
         await sleep(15000);
     }
