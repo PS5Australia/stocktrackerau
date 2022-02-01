@@ -5,7 +5,7 @@ function sleep(ms) {
 async function OnLaunch() {
     var i = 1
     while (i < 10) {
-        const url = 'https://www.stocktrackerau.com/stock.json'
+        const url = 'https://github.com/PS5Australia/stocktrackerau/blob/main/stock.json'
         var response = await fetch(url, {
             method: 'GET',
             headers: {
