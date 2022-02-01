@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 </html>
-    <body style="background-color:rgb(255, 255, 255)">
+    <body style="background-color:rgb(255, 255, 255)" onload="OnLaunch()">
         <link rel="stylesheet" href="StyleSheet.css" />
         <link rel="stylesheet" href="Table.css" />
         <script src="SiteScript.js"></script>
+        <script src="Updater.js"></script>
         <link rel="icon" href="favicon.ico">
         <title>Stock Tracker AU</title>
-        <meta http-equiv="refresh" content="15">
         <div class="topnav">
         <div>
             <a class="logo" href="/">
@@ -29,23 +29,23 @@
                   <th>PS5 Digital Bundle</th>
                 </tr>
                 <tr>
-                  <td class="amazondisc"><a href="https://amzn.to/3lWEPip" target="_blank">Amazon | Out of Stock</a></td>
-                  <td class="amazondigital"><a href="https://amzn.to/3AIdTcv" target="_blank">Amazon | Out of Stock</a></td>
-                  <td class="targetdiscbundle"><a href="https://target.com.au/p/playstation-reg-5-console-with-additional-dualsense-wireless-controller-bundle/65618097" target="_blank">Target | Out of Stock</a></td>
-                  <td class="sonydigitalbundle"><a href="https://store.sony.com.au/playstation-5-console/PS5WDBUNDLE.html" target="_blank">Sony AU | Out of Stock</a></td>
+                  <td class="amazondisc"><a id="amazondisc" href="https://amzn.to/3lWEPip" target="_blank">Amazon | Out of Stock</a></td>
+                  <td class="amazondigital"><a id="amazondgital" href="https://amzn.to/3AIdTcv" target="_blank">Amazon | Out of Stock</a></td>
+                  <td class="targetdiscbundle"><a id="targetdiscbundle" href="https://target.com.au/p/playstation-reg-5-console-with-additional-dualsense-wireless-controller-bundle/65618097" target="_blank">Target | Out of Stock</a></td>
+                  <td class="sonydigitalbundle"><a id="targetdigitalbundle" href="https://store.sony.com.au/playstation-5-console/PS5WDBUNDLE.html" target="_blank">Sony AU | Out of Stock</a></td>
                 </tr>
                 <tr>
-                    <td class="bigwdisc"><a href="https://www.bigw.com.au/product/playstation-5-console/p/124625/" target="_blank">Big W | Out of Stock</a></td>
-                    <td class="bigwdigital"><a href="https://www.bigw.com.au/product/playstation-5-digital-edition-console/p/124626/" target="_blank">Big W | Out of Stock</a></td>
-                    <td class="sonydiscbundle"><a href="https://store.sony.com.au/playstation-5-console/PS5WBUNDLE.html" target="_blank">Sony AU | Out of Stock</a></td>
+                    <td class="bigwdisc"><a id="bigwdisc" href="https://www.bigw.com.au/product/playstation-5-console/p/124625/" target="_blank">Big W | Out of Stock</a></td>
+                    <td class="bigwdigital"><a id="bigwdigital" href="https://www.bigw.com.au/product/playstation-5-digital-edition-console/p/124626/" target="_blank">Big W | Out of Stock</a></td>
+                    <td class="sonydiscbundle"><a id="sonydiscbundle" href="https://store.sony.com.au/playstation-5-console/PS5WBUNDLE.html" target="_blank">Sony AU | Out of Stock</a></td>
                 </tr>
                 <tr>
-                    <td class="targetdisc"><a href="https://target.com.au/p/playstation-reg-5-console/64226187" target="_blank">Target | Out of Stock</a></td>
-                    <td class="targetdigital"><a href="https://target.com.au/p/playstation-reg-5-console-digital-edition/64226170" target="_blank">Target | Out of Stock</a></td>
+                    <td class="targetdisc"><a id="targetdisc" href="https://target.com.au/p/playstation-reg-5-console/64226187" target="_blank">Target | Out of Stock</a></td>
+                    <td class="targetdigital"><a id="targetdigital" href="https://target.com.au/p/playstation-reg-5-console-digital-edition/64226170" target="_blank">Target | Out of Stock</a></td>
                 </tr>
                 <tr>
-                    <td class="sonydisc"><a href="https://store.sony.com.au/playstation-5/PLAYSTATION5W.html" target="_blank">Sony AU | Out of Stock</a></td>
-                    <td class="sonydigital"><a href="https://store.sony.com.au/playstation-5-console/PLAYSTATION5WD.html" target="_blank">Sony AU | Out of Stock</a></td>
+                    <td class="sonydisc"><a id="sonydisc" href="https://store.sony.com.au/playstation-5/PLAYSTATION5W.html" target="_blank">Sony AU | Out of Stock</a></td>
+                    <td class="sonydigital"><a id="sonydigital" href="https://store.sony.com.au/playstation-5-console/PLAYSTATION5WD.html" target="_blank">Sony AU | Out of Stock</a></td>
                 </tr>
               </table>
               <div class="howitworks"><a>Note; You can click on the item to get the link! The box will go green when that item is in stock along with the text being updated to "In Stock". The site auto refreshes so no need to press the refresh button!</a></div>
