@@ -17,7 +17,6 @@ function stockNotfication() {
   }
 
 async function OnLaunch() {
-    stockNotfication()
     const url = 'https://api.jsonbin.io/b/61f929711960493ad186160e/latest'
     var response = await fetch(url, {
         method: 'GET',
