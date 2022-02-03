@@ -1,12 +1,22 @@
-@media (min-width: 600px) {
-  table {
-    border-collapse: separate;
-    text-align: center;
-    border-spacing: 20px 10px;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 600px) {
+  .logo img {
+    width: 80px;
+    height: 40px;
   }
 
+  .topnav a.logo {
+    float: left;
+    float: center;
+  }
+
+  .topnav a.secondary {
+    color: #f2f2f2;
+    padding: 15px 6px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  /*PS5Page*/
   .twitterps5,
   .twitterxsx,
   .twitterrat,
@@ -19,21 +29,9 @@
     box-sizing: border-box;
   }
 
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  th {
-    text-align: center;
-  }
-
-  /*Remove*/
   td {
     text-align: center;
     border: 1px solid rgb(255, 0, 0);
-    padding: 5px;
   }
 
   .sitestatus {
@@ -103,12 +101,6 @@
 
   .sonydisc {
     border: 1px solid rgb(255, 0, 0);
-  }
-  .table {
-    padding: 50px 40px;
-    text-align: left;
-    font-family: arial;
-    font-size: 25px;
   }
 
   .table th {
