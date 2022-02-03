@@ -1,3 +1,7 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function OnLaunch() {
     const url = 'https://api.jsonbin.io/b/61f929711960493ad186160e/latest'
     var response = await fetch(url, {
@@ -214,4 +218,5 @@ async function OnLaunch() {
         }
 
     });
+    await sleep(240000)
 }
