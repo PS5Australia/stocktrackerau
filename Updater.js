@@ -21,15 +21,16 @@ async function OnLaunch() {
         }
         else if (obj["AmazonDisc"] == "In Stock") {
             document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
+            document.getElementById("amazondisc").style.fontWeight = "bold";
             document.getElementById("amazondiscborder").style.borderColor = "green";
             if (Notification.permission === "granted") {
-                var notification = new Notification("Stock! PS5 Disc in stock at Amazon");
+                var notification = new Notification("Look at PS5 page to see how stock will look like!");
               }
 
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
-                    var notification = new Notification("Stock! PS5 Disc in stock at Amazon");
+                    var notification = new Notification("Look at PS5 page to see how stock will look like!");
                   }
                 });
               }
