@@ -31,13 +31,13 @@ async function OnLaunch() {
             document.getElementById("amazondisc").style.fontWeight = "bold";
             document.getElementById("amazondiscborder").style.borderColor = "green";
             if (Notification.permission === "granted") {
-                var notification = new Notification("Look at PS5 page to see how stock will look like!");
+                var notification = new Notification("Stock! PS5 Disc in stock at Amazon");
               }
 
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
-                    var notification = new Notification("Look at PS5 page to see how stock will look like!");
+                    var notification = new Notification("Stock! PS5 Disc in stock at Amazon");
                   }
                 });
               }
