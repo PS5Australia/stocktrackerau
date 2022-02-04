@@ -46,7 +46,6 @@ table {
 
 .twitterps5,
 .twitterxsx,
-.twitterrat,
 .discord {
   border: none;
   background: none;
@@ -118,4 +117,8 @@ table {
 .status a {
   text-align: center;
   font-size: 20px;
+}
+
+.statusmain a {
+  text-align: right;
 }
