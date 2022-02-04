@@ -14,6 +14,7 @@ async function OnLaunch() {
     .then(response => response.text())
     .then(data => {
         var obj = JSON.parse(data);
+        console.log(obj)
         /*Amazon*/
         if (obj["AmazonDisc"] == "Out of Stock") {
             document.getElementById("amazondisc").innerHTML="Amazon | Out of Stock";
