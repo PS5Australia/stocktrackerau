@@ -22,7 +22,7 @@ async function OnLaunch() {
             document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
             document.getElementById("amazondiscborder").style.borderColor = "green";
             if (Notification.permission === "granted") {
-                var notification = new Notification("Stock! PS5 Disc in stock at Amazon");
+                var notification = new Notification("Hello everyone its Ps5Aus. This is just a test you will see that the amazon disc is in stock ITS NOT! ");
               }
             
               else if (Notification.permission !== "denied") {
