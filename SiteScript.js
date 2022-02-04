@@ -1,13 +1,3 @@
-window.onload = function darkMode() {
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-  if (prefersDarkScheme.matches) {
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-  }
-}
-
 function myFunction() {
     document.getElementById("easteregg").innerHTML = "Wow! You found this :O";
   }

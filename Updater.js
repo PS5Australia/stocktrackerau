@@ -3,6 +3,13 @@ function sleep(ms) {
 }
 
 async function OnLaunch() {
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (prefersDarkScheme.matches) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
     const url = 'https://api.jsonbin.io/b/61f929711960493ad186160e/latest'
     var response = await fetch(url, {
         method: 'GET',
