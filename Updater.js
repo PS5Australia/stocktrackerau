@@ -22,9 +22,9 @@ async function OnLaunch() {
             document.getElementById("amazondisc").innerHTML="Amazon | In Stock";
             document.getElementById("amazondiscborder").style.borderColor = "green";
             if (Notification.permission === "granted") {
-                var notification = new Notification("Hello everyone its Ps5Aus. This is just a test you will see that the amazon disc is in stock ITS NOT! ");
+                var notification = new Notification("Stock! PS5 Disc in stock at Amazon");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -42,7 +42,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Digital in stock at Amazon");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -58,7 +58,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Disc in stock at Big W");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -76,7 +76,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Digital in stock at Big W");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -95,7 +95,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Digital in stock at Target");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -113,7 +113,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Disc in stock at Target");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -131,7 +131,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Disc Bundle in stock at Target");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -150,7 +150,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Disc Bundle in stock at Sony");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -168,7 +168,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Digital Bundle in stock at Sony");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -186,7 +186,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Digital in stock at Sony");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
@@ -204,7 +204,7 @@ async function OnLaunch() {
             if (Notification.permission === "granted") {
                 var notification = new Notification("Stock! PS5 Disc in stock at Sony");
               }
-            
+
               else if (Notification.permission !== "denied") {
                 Notification.requestPermission().then(function (permission) {
                   if (permission === "granted") {
