@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="StyleSheet.css" />
         <link rel="stylesheet" href="custom.css" />
         <link rel="stylesheet" href="Table.css" />
-        <script src="SiteScript.js"></script>
-        <script src="Updater.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="SiteScript.js"></script>
+        <script type="text/javascript" src="Updater.js"></script>
         <link rel="icon" href="favicon.ico">
         <title>Stock Tracker AU</title>
         <div class="topnav">
@@ -32,6 +33,16 @@
         <a class="secondary" href="links">Links</a>
         <a class="secondary" href="contact">Contact</a>
         </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <h1>Please Read!</h1>
+                <p>Heya all! I hope you are enjoying the site, I know I am! Just something small, running this site can be costly and is coming out of my pocket. If you would like please feel free to donate. None of this money will be spent on me and will only be spent on the site!</p>
+                <a href="https://donorbox.org/ps5-alert-australia">Donate Here!</a>
+            </div>
+        </div>
+        <button class="btn" onclick="togglePopup()">Please Read Me!</button>
         <div class="table">
             <div class="ps5title"><a>Playstation 5</a></div>
             <table>

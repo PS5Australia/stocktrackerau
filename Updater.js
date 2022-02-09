@@ -227,5 +227,4 @@ async function OnLaunch() {
         }
 
     });
-    await sleep(240000)
 }

@@ -17,3 +17,8 @@ function twitterRat() {
 function discord() {
   window.open('https://discord.gg/jzSfgkdsTv', '_blank');
 }
+
+function togglePopup() {
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
