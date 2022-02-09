@@ -34,6 +34,34 @@ body {
   float: left;
   float: center;
 }
+.title1,
+.title2 {
+  text-align: center;
+}
+.music {
+  text-align: center;
+}
+.music a {
+  text-decoration: none;
+  color: black;
+}
+.dark-mode .music a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.thebutton {
+  text-decoration: none;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .thebutton {
+  text-decoration: none;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
 
 .topnav a.secondary {
   float: left;
@@ -197,13 +225,22 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.btn {
+.dark-mode .btn {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
   background: rgb(29, 29, 29);
   border-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .popup .overlay {
   position: fixed;
@@ -216,12 +253,26 @@ input:checked + .slider:before {
   display: none;
 }
 
-.popup .content {
+.dark-mode .popup .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: rgb(29, 29, 29);
+  width: 450px;
+  height: 280px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: rgb(255, 255, 255);
   width: 450px;
   height: 280px;
   z-index: 2;
