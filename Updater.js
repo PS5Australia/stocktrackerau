@@ -12,7 +12,8 @@ async function OnLaunch() {
     }
     var objDate = new Date();
     var hours = objDate.getHours();
-    if(hours >= 7 && hours <= 21){
+    console.log(objDate)
+    if(hours >= 21 && hours <= 7){
       const url = 'https://api.jsonbin.io/v3/b/61f929711960493ad186160e/latest'
       var response = await fetch(url, {
           method: 'GET',
