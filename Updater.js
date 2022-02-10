@@ -12,7 +12,8 @@ async function OnLaunch() {
     }
     var objDate = new Date();
     var hours = objDate.getUTCHours();
-    if(hours <= 11 && hours >= 21){
+    console.log(hours)
+    if(hours <= 10 || hours >= 20){
       const url = 'https://api.jsonbin.io/v3/b/61f929711960493ad186160e/latest'
       var response = await fetch(url, {
           method: 'GET',
