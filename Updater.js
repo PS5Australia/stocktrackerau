@@ -11,11 +11,8 @@ async function OnLaunch() {
       document.body.classList.remove("dark-mode");
     }
     var objDate = new Date();
-    var hours = objDate.getHours();
-    console.log(objDate)
-    if(hours >= 21 && hours <= 7){
-      console.log("NOT RUNNING UNTIL 7AM!")
-    } else {
+    var hours = objDate.getUTCHours();
+    if(hours <= 11 && hours >= 21){
       const url = 'https://api.jsonbin.io/v3/b/61f929711960493ad186160e/latest'
       var response = await fetch(url, {
           method: 'GET',
@@ -233,5 +230,8 @@ async function OnLaunch() {
           }
 
       });
+    } else {
+      console.log("NOT RUNNING UNTIL 7AM!")
+      document.getElementById("ps5title").innerHTML="Playstation 5 | Sleeping...";
     }
 }
