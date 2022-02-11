@@ -14,7 +14,7 @@ async function OnLaunch() {
     var hours = objDate.getUTCHours();
     console.log(hours)
     if(hours <= 10 || hours >= 20){
-      const url = 'https://api.jsonbin.io/v3/b/61f929711960493ad186160e/latest'
+      const url = 'https://api.jsonbin.io/v3/b/620606e7ca70c44b6e935fa6'
       var response = await fetch(url, {
           method: 'GET',
           headers: {
