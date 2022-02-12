@@ -18,7 +18,7 @@ async function OnLaunch() {
       var response = await fetch(url, {
           method: 'GET',
           headers: {
-              Accept: 'application/json',
+              "X-Bin-Meta": false
           }
           }
       )
