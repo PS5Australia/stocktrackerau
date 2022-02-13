@@ -234,10 +234,11 @@ async function OnLaunch() {
 
         });
       } else {
-        console.log("NOT RUNNING UNTIL MONDAY!")
+        console.log("NOT RUNNING UNTIL MONDAY!");
+        document.getElementById("ps5title").innerHTML="Playstation 5 | Sleeping...";
       }
     } else {
-      console.log("NOT RUNNING UNTIL 7AM!")
+      console.log("NOT RUNNING UNTIL 7AM!");
       document.getElementById("ps5title").innerHTML="Playstation 5 | Sleeping...";
     }
 }
