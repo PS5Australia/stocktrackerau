@@ -231,6 +231,39 @@ async function OnLaunch() {
             else if (obj["SonyDisc"] == "Out of Stock") {
                 document.getElementById("sonydisc").innerHTML="Sony | Out of Stock";
             }
+            if (obj["EBDisc"] == "In Stock") {
+                document.getElementById("ebdisc").innerHTML="EB Games | In Stock";
+                document.getElementById("ebdiscborder").style.borderColor = "green";
+                if (Notification.permission === "granted") {
+                    var notification = new Notification("Stock! PS5 Disc in stock at EB Games");
+                  }
+
+                  else if (Notification.permission !== "denied") {
+                    Notification.requestPermission().then(function (permission) {
+                      if (permission === "granted") {
+                        var notification = new Notification("Stock! PS5 Disc in stock at EB Games");
+                      }
+                    });
+                  }
+            } else if (obj["EBDisc"] == "Out of Stock") {
+                document.getElementById("ebdisc").innerHTML="EB Games | Out of Stock";
+            } if (obj["EBDigital"] == "In Stock") {
+                document.getElementById("ebdigital").innerHTML="EB Games | In Stock";
+                document.getElementById("ebdigitalborder").style.borderColor = "green";
+                if (Notification.permission === "granted") {
+                    var notification = new Notification("Stock! PS5 Digital in stock at EB Games");
+                  }
+
+                  else if (Notification.permission !== "denied") {
+                    Notification.requestPermission().then(function (permission) {
+                      if (permission === "granted") {
+                        var notification = new Notification("Stock! PS5 Digital in stock at EB Games");
+                      }
+                    });
+                  }
+            } else if (obj["EBDigital"] == "Out of Stock") {
+                document.getElementById("ebdigital").innerHTML="EB Games | Out of Stock";
+            }
 
         });
       } else {
