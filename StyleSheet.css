@@ -1,20 +1,12 @@
+* {
+  color: white !important;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
-}
-
-.dark-mode {
-  background-color: rgb(29, 29, 29);
-  color: white;
-}
-.dark-mode a {
   color: white !important;
 }
 
-.dark-mode a.secondary:hover {
-  background-color: rgb(0, 0, 0) !important;
-}
 .topnav {
   overflow: hidden;
   background-color: rgb(0, 0, 139);
@@ -26,29 +18,21 @@ body {
 }
 
 .topnav a.secondary:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .topnav a.logo {
   float: left;
+  color: white;
   float: center;
 }
 .title1,
 .title2 {
   text-align: center;
+  color: white;
 }
-.music {
-  text-align: center;
-}
-.music a {
-  text-decoration: none;
-  color: black;
-}
-.dark-mode .music a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
+
 .thebutton {
   text-decoration: none;
   border-color: rgb(0, 0, 0);
@@ -128,9 +112,13 @@ table {
   display: block;
   margin: auto;
   text-align: center;
-  padding: 40px 0px;
 }
 
+.ps5title2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0px;
+}
 .ps5stats {
   font-size: 20px;
   display: block;
